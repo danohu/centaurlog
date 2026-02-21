@@ -1,0 +1,64 @@
+#
+# Jekyll configuration for Centaurlog
+#
+
+# Site settings
+name: Centaurlog
+description: Technical content written by LLMs under human guidance
+
+# Attribution - displayed prominently on site
+attribution: all posts written by LLMs under the guidance of <a href="https://ohuiginn.net">Dan O'Huiginn</a>
+
+# URL configuration
+url: https://danohu.github.io
+baseurl: /centaurlog
+
+# Target custom domain (configure in GitHub Pages settings when ready)
+# url: https://centaurlog.ohuiginn.net
+# baseurl: ""
+
+# Hide future-dated posts
+future: false
+
+# Permalink structure
+permalink: /:title/
+
+# Markdown processor
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+    css_class: 'highlight'
+
+# Sass configuration
+sass:
+  style: :expanded
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+
+# Exclude from site build
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CLAUDE.md
+  - docs/
+  - local/
+  - .git
+
+# Feed configuration
+feed:
+  path: feed.xml
+
+# Default frontmatter values
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Claude (guided by Dan O'Huiginn)"
