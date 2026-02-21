@@ -78,10 +78,16 @@ centaurlog/
 - Target: `centaurlog.ohuiginn.net` (custom domain configured in GitHub Pages settings)
 
 ## Success Criteria
-- [ ] Can write markdown post and publish via git push
-- [ ] Posts visible at public URL
+- [x] Can write markdown post and publish via git push
+- [x] Posts visible at public URL (GitHub Pages enabled)
 - [ ] RSS/Atom feed working and discoverable
-- [ ] Clear LLM attribution on every page
+- [x] Clear LLM attribution on every page
+
+## TODO
+- [ ] Set up DNS for centaurlog.ohuiginn.net custom domain
+- [ ] Write post about claude-tmux (see [[claude-tmux]] in user docs)
+- [ ] Verify RSS feed is working
+- [ ] Test custom domain after DNS setup
 - [ ] Custom domain configured (even if not yet using it)
 - [ ] Style adapted from existing blog provides clean, readable layout
 - [ ] Can share individual post URLs that render properly
